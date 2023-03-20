@@ -29,6 +29,7 @@ interface IProps extends TextInputProps {
   renderRightIcon?: () => JSX.Element | null | undefined;
   renderLeftIcon?: () => JSX.Element | null | undefined;
   onChangeValue?: (value: string[]) => void;
+  onRemove?: (index: number) => void;
   renderHashtagItem?: (
     item: any,
     onRemove?: () => void

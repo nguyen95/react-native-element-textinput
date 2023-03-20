@@ -43,7 +43,8 @@ const HashtagInputComponent: HashtagProps = (props) => {
     onChangeText = (_value: string) => {},
     renderLeftIcon,
     renderRightIcon,
-    onChangeValue = (_value: string[]) => {},
+    onChangeValue = (_value: string[]) => { },
+    onRemove = (_index: number) => {},
     renderHashtagItem,
   } = props;
 
@@ -106,6 +107,7 @@ const HashtagInputComponent: HashtagProps = (props) => {
           array.splice(index, 1);
           setHashtag(array);
           onChangeValue(array);
+          onRemove(index)
         }
       }
     },

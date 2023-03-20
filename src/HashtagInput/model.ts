@@ -19,6 +19,7 @@ interface IProps extends TextInputProps {
   textErrorStyle?: StyleProp<TextStyle>;
   hashtagStyle?: StyleProp<ViewStyle>;
   hashtagTextStyle?: StyleProp<TextStyle>;
+  showItemSelected?: boolean;
   textError?: string;
   label?: string;
   showIcon?: boolean;

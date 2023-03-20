@@ -38,6 +38,7 @@ const HashtagInputComponent: HashtagProps = (props) => {
     data = [],
     hashtagStyle,
     hashtagTextStyle,
+    showItemSelected,
     onFocus,
     onBlur,
     onChangeText = (_value: string) => {},
@@ -232,7 +233,7 @@ const HashtagInputComponent: HashtagProps = (props) => {
           {_renderRightIcon()}
         </View>
       </View>
-      {_renderItemSelected()}
+      {showItemSelected && _renderItemSelected()}
       {textError ? (
         <Text style={[styles.textError, textErrorStyle]}>{textError}</Text>
       ) : null}
